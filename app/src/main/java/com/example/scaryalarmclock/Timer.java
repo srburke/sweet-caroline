@@ -7,10 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
 import java.util.Locale;
 
 public class Timer extends Fragment {
@@ -19,23 +16,13 @@ public class Timer extends Fragment {
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
-
     private CountDownTimer mCountDownTimer;
-
     private boolean mTimerRunning;
-
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.fragment_timer);
-
-        //View view = inflater.inflate(R.layout.testclassfragment, container, false);
-        //mTextViewCountDown = view.findViewById(R.id.text_view_countdown);
-
-        //mButtonStartPause = findViewById(R.id.button_start_pause);
-        //mButtonReset = findViewById(R.id.button_reset);
 
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,11 +52,11 @@ public class Timer extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_timer, container, false);
         mTextViewCountDown = view.findViewById(R.id.text_view_countdown);
-
         mButtonStartPause = view.findViewById(R.id.button_start_pause);
         mButtonReset = view.findViewById(R.id.button_reset);
 
-        return inflater.inflate(R.layout.fragment_timer, container, false);
+        //return inflater.inflate(R.layout.fragment_timer, container, false);
+        return view;
     }
 
     private void startTimer() {
