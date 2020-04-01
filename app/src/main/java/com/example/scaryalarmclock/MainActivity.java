@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         myFragment = new Alarm();
         if(myFragment != null){
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.flcontent,myFragment, myFragment.getTag()).commit();
+            fragmentManager.beginTransaction().replace(R.id.flcontent,myFragment).commit();
         }
     }
 
