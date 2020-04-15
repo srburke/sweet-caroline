@@ -11,8 +11,34 @@
         android:orientation="vertical"
         android:id="@+id/flcontent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="No Alarm set"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/button_timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:text="@string/open_time_picker"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_alarm"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"/>
         ></FrameLayout>
+
 
     <com.google.android.material.navigation.NavigationView
         app:headerLayout="@layout/nav_header"
@@ -27,6 +53,7 @@
         >
 
     </com.google.android.material.navigation.NavigationView>
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

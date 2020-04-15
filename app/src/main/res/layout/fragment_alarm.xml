@@ -10,7 +10,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@id/button_timepicker"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"
         android:text="No Alarm set"
@@ -28,7 +27,6 @@
         android:id="@+id/button_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_timepicker"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:text="@string/cancel_alarm" />
